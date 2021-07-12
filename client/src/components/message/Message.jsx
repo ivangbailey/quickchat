@@ -10,7 +10,6 @@ const formatTimestamp = (timestamp) => {
 }
 
 const Message = (props) => {
-
   const {message, user_id, date, position} = props.message;
   const classes = 'message ' + position;
   return (

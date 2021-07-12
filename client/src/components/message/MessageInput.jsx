@@ -6,7 +6,7 @@ const MessageInput = (props) => {
 
   const socket = useContext(SocketContext);
   const {uid} = props;
-
+  console.log(uid)
   const value = () => {
     return input.current.value;
   };
@@ -17,7 +17,7 @@ const MessageInput = (props) => {
 
   const submit = () => {
     const message = {
-      uid: uid,
+      uid,
       message: value()
     };
     socket.emit('message', message)

@@ -1,11 +1,12 @@
 import React, {useEffect, useState, useContext} from 'react';
 import axios from 'axios';
-import {SocketContext} from '../context/SocketContext.jsx';
 import MessageContainer from './message/MessageContainer.jsx';
+import Cookies from 'js-cookie';
 
 const QuickChat = (props) => {
+  const uid = Cookies.get('uuid');
 
-  const uid = 0;
+  console.log(uid);
 
   return (
     <>

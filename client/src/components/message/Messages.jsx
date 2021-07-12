@@ -3,7 +3,6 @@ import Message from './Message.jsx';
 import MessageInput from './MessageInput.jsx';
 import {SocketContext} from '../../context/SocketContext.jsx';
 import axios from 'axios';
-
 const Messages = (props) => {
 
   const [messages, setMessages] = useState([]);
