@@ -4,9 +4,9 @@
   "description": "A snappy application for chatting.",
   "main": "index.js",
   "scripts": {
-    "server-dev": "nodemon server/index.js",
+    "server-dev": "nodemon server/app.js",
     "client-dev": "webpack -w",
-    "live": "live-server server/index.js",
+    "live": "live-server server/app.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",

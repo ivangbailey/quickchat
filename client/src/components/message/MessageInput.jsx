@@ -6,7 +6,6 @@ const MessageInput = (props) => {
 
   const socket = useContext(SocketContext);
   const {uid} = props;
-  console.log(uid)
   const value = () => {
     return input.current.value;
   };

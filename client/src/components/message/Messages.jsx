@@ -49,7 +49,7 @@ const Messages = (props) => {
     <div id="messages">
       {messages.map(message => {
         message.position = uid == message.uid ? 'right' : 'left';
-        return <Message key={message.date} message={message}/>;
+        return <Message key={JSON.stringify(message.date)} message={message}/>;
       })}
 
     </div>
