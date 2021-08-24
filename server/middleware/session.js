@@ -13,18 +13,18 @@ const sessionParser = session({
 })
 
 const sessionManager = (req, res, next) => {
-  let validSession = false;
-  let {uuid, username} = req.session;
-  if (!uuid) {
-    uuid = uuidv4();
-    username = 'USERNAME';
-    sessions[uuid] = username;
+  // let validSession = false;
+  // let {uuid, username} = req.session;
+  // if (!uuid) {
+  //   uuid = uuidv4();
+  //   username = 'USERNAME';
+  //   sessions[uuid] = username;
 
-    req.session.username = username;
-    req.session.uuid = uuid;
-  }
-  res.cookie('uuid', uuid);
-  res.cookie('username', username);
+  //   req.session.username = username;
+  //   req.session.uuid = uuid;
+  // }
+  // res.cookie('uuid', uuid);
+  // res.cookie('username', username);
 
   next();
 }

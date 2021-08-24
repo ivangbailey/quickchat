@@ -11,11 +11,9 @@ const initialize = (nextServer) => {
   nextServer.prepare().then(() => {
     app.use(cors.corsPolicy);
     app.use(session.sessionParser);
-    app.use('*', session.sessionManager);
-    // app.use(login.passport.session());
+    app.use(session.sessionManager);
     app.use(express.json());
     app.use(express.urlencoded({ extended: true }));
-    // app.use(express.static(path.join(__dirname, '/../client')));
 
     app.get('/messages', controllers.messages.get);
 
