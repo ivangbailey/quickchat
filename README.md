@@ -1,2 +1,3 @@
 # quickchat
-currently transitioning this project into a next.js project
+To look at the current development queue for this project, please see:
+https://trello.com/b/yiq97T6R/quickchat
