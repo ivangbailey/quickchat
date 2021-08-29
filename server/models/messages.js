@@ -23,7 +23,5 @@ module.exports = {
           .finally(client.release());
       })
       .catch(console.error);
-
-
   }
 }
