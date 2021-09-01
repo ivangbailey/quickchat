@@ -1,5 +1,5 @@
 # quickchat
-quickchat is an early development stage chat application utilize modern technologies including: Next.js (frontend), Express.js(backend), socket.io (chat server), JWT (stateless auth system).
+quickchat is an early development stage chat application utilizing modern, scalabale technologies including: Next.js + React + MaterialUI (frontend), Express.js(backend), socket.io (chat server), JWT (stateless auth system).
 
 The goal is to build an advanced chat application built to be scalable horizontally with a heavy utilization of stateless design.
 
